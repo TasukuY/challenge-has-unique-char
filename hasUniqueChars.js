@@ -1,7 +1,7 @@
 // Write your code below
 
 let hasUniqueChars = (str) => {
-    let hasUniqueChar = false;
+    let hasUniqueChar = true;
     //split the str into an array
     let strArr = str.split('');
     //check each char and check if there is the same char in the array
@@ -11,12 +11,16 @@ let hasUniqueChars = (str) => {
         let letterToCheck = strArr[i];
         for(let j = i+1; j < strArr.length; j++){
             if(letterToCheck === strArr[j]){
-                hasUniqueChar = true
+                hasUniqueChar = false
             }
         }
     }
-
     return hasUniqueChar;
 }
 
-console.log(hasUniqueChars('abcdefghijka'));
+console.log(hasUniqueChars('Moonday'));
+
+// let hasUniqueChars2 = (str) => {
+//     let hasUniqueChar = false;
+
+// }
