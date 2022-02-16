@@ -25,11 +25,13 @@ let hasUniqueChars2 = (str) => {
     const newStr = new Set(str);
     let newArr = [...newStr];
     
-    if(str.length !== newArr.length){
-        return false;
-    }else{
-        return true;
-    }
+    // if(str.length !== newArr.length){
+    //     return false;
+    // }else{
+    //     return true;
+    // }
+
+    return str.length === newArr.length;
 }
 
 console.log(hasUniqueChars2('Moonday'));
